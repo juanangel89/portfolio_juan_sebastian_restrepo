@@ -1,7 +1,7 @@
-import React from 'react';
-import './Navbar.css'
 
-export const Navbar = () => {
+import './Header.css'
+
+export const Header = () => {
   return (
     <header>
       <nav className="navbar">

@@ -1,7 +1,12 @@
-import React from 'react'
+import { Header } from "../../Layouts/Header/Header"
+
 
 export const Home = () => {
   return (
-    <div>Home</div>
+    <>
+        <div>Home</div>
+        <Header/>
+    </>
+
   )
 }
