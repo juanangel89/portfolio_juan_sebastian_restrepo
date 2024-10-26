@@ -1,23 +1,18 @@
-
+//rafc
+import { Navbar } from '../../UI/Navbar/Navbar'
+import { Brand } from '../../UI/Brand/Brand'
 import './Header.css'
 
 export const Header = () => {
   return (
     <header>
+      <Brand/>
       <nav className="navbar">
         <ul className="navbar-list">
-          <li className="navbar-item">
-            <a href="/">Home</a>
-          </li>
-          <li className="navbar-item">
-            <a href="/about-me">About Me</a>
-          </li>
-          <li className="navbar-item">
-            <a href="/contact-me">Contact Me</a>
-          </li>
-          <li className="navbar-item">
-            <a href="/other-routes">Other Routes</a>
-          </li>
+          <Navbar link='../../Pages/Home/Home' text='Home'/>
+          <Navbar link='../../Pages/MyProjects/MyProjects' text='My projects'/>
+          <Navbar link='' text='My skills'/>
+          <Navbar link='' text='Contact'/>
         </ul>
       </nav>
     </header>

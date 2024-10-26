@@ -1,0 +1,102 @@
+@media screen and (min-width: 390px) and (max-width: 490px) {
+    .intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .intro > .perfil {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+      }
+      .perfil > h1 {
+
+        background-color: #246398;
+        margin: 0;
+        padding: 2rem;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 22px;
+      }
+      .intro > .about {
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+      }
+      .about > p {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 22px;
+        padding: 2rem;
+      }
+}
+@media screen and (min-width: 491px) and (max-width: 1040px) {
+    .intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .intro > .perfil {
+        
+        display: flex;
+        flex-direction: column;
+      }
+      .perfil > h1 {
+        background-color: #246398;
+        padding: 1rem;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 22px;
+        
+      }
+      .intro > .about {
+        width: 100%;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+      }
+      .about > p {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 22px;
+        padding: 2rem;
+      }
+}
+@media screen and (min-width: 1041px) {
+    .intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .intro > .perfil {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+      .perfil > h1 {
+        padding: 0 7rem 0 0;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 28px;
+      }
+      .intro > .about {
+        background-color: #246398;
+        width: 100%;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+      }
+      .about > p {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 22px;
+        padding: 2rem;
+      }
+}
+
+

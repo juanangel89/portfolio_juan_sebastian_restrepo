@@ -1,3 +1,4 @@
+
 import { Home } from "./components/Pages/Home/Home"
 
 export const App =() => {
@@ -5,6 +6,7 @@ export const App =() => {
   return (
     <>
       <Home />
+      
     </>
   )
 }

@@ -1,0 +1,8 @@
+.foto {
+  width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .foto > img {
+    width: 70%;
+  }
