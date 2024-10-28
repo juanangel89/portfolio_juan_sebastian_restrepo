@@ -1,5 +1,5 @@
 //rafc
-import perfilJuan from '../../../assets/perfilJuan.png';
+import perfilJuan from '../../../assets/perfiljuan.png';
 import './Photo.css'
 
 export const Photo = () => {
