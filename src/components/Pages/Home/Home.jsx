@@ -11,8 +11,8 @@ export const Home = () => {
     <>
         <Background>
         <Header />
-        <Projects/>
         <Intro />
+        <Projects/>
         <MySkills/>
         <ContactMe/>
         <Footer />
