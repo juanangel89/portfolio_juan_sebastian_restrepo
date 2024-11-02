@@ -12,9 +12,9 @@ export const Home = () => {
         <Background>
         <Header />
         <Intro />
-        <Projects/>
+        {/* <Projects/>
         <MySkills/>
-        <ContactMe/>
+        <ContactMe/> */}
         <Footer />
         </Background>
 

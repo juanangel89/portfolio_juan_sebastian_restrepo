@@ -1,10 +1,12 @@
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import './Navbar.css'
 
 export const Navbar = ({link,text}) => {
   return (
     <li className="navbar-item">
-    <a href={link}>{text}</a>
+      <Link to={link}>{text}</Link>
+    {/* <a href={link}>{text}</a> */}
   </li>
   )
 }

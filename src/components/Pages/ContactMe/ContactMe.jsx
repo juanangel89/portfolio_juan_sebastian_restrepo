@@ -1,8 +1,14 @@
+import { Footer } from '../../Layouts/Footer/Footer'
+import { Header } from '../../Layouts/Header/Header'
+import { Background } from '../../UI/Background/Background'
+
 import './ContactMe.css'
 
 export const ContactMe = () => {
   return (
     <>
+    <Background>
+    <Header/>
     <section className="boxContact">
       <section className="contact">
         <div className="formulario">
@@ -11,7 +17,6 @@ export const ContactMe = () => {
                 <div className="form-group">
                     <label htmlFor="nombre">Name:</label>
                 <input type="text" id="username" name="username" required minLength="2" maxLength="50" pattern="[a-zA-Z\s]+" placeholder="Enter your name"/>
-
                 </div>
                 <div className="form-group">
                     <label htmlFor="Correo Electonico">Email:</label>
@@ -28,6 +33,8 @@ export const ContactMe = () => {
         </div>
       </section>
     </section>
+    <Footer/>
+    </Background>
     </>
     
   )

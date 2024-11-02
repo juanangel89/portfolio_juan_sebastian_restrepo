@@ -9,10 +9,10 @@ export const Header = () => {
       <Brand/>
       <nav className="navbar">
         <ul className="navbar-list">
-          <Navbar link='../../Pages/Home/Home' text='Home'/>
-          <Navbar link='../../Pages/MyProjects/MyProjects' text='My projects'/>
-          <Navbar link='' text='My skills'/>
-          <Navbar link='' text='Contact'/>
+          <Navbar link='/' text='Home'/>
+          <Navbar link='/MyProjects' text='Projects'/>
+          <Navbar link='/MySkills' text='Skills'/>
+          <Navbar link='/ContactMe' text='Contact'/>
         </ul>
       </nav>
     </header>
