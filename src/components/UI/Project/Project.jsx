@@ -7,7 +7,6 @@ import atlas from '../../../assets/atlas.png';
 import './Project.css'
 
 
-
 export const Project = ({classPro,name,tittle,link}) => {
      // Mapeo de nombres a imágenes
   const images = {
