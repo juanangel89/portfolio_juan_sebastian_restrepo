@@ -16,9 +16,9 @@ export const LogoExperience = ({ logolink, name }) => {
   };
 
   const experience = {
-    ibg: '6 months of programming applications in PHP and JavaScript and migrating from Informix to SQL Server',
-    biotic: 'brand creation and corporate identity',
-    alberto: 'Over 10 years creating plans, budgets, construction quantities, electrical calculations, and automating tasks to streamline processes.',
+    ibg: '6 months of programming applications',
+    biotic: 'Brand creation and corporate identity',
+    alberto: 'Over 10 years creating electrical calculations, and automating tasks to streamline processes.',
   }
 
   const imageSrc = images[logolink] || 0;
