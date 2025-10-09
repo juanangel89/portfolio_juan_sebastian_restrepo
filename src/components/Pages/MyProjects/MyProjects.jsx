@@ -7,11 +7,11 @@ import { Projects } from "../../Layouts/Projects/Projects.jsx";
 export const MyProjects = () => {
   return (
     <>
-      <Background>
+      {/* <Background> */}
         <Header />
           <Projects/>
         <Footer />
-      </Background>
+      {/* </Background> */}
     </>
   );
 };

@@ -1,17 +1,15 @@
-//rafc
+// src/components/UI/Background/Background.jsx
+
 import fondo from '../../../assets/fondo.jpg';
 import './Background.css'
-import PropTypes from 'prop-types';
+// Ya no necesitamos PropTypes ni {children}
 
-export const Background = ({children}) => {
+export const Background = () => {
   return (
+    // ¡Solo renderiza la imagen!
     <section className="fondo">
-        <img  src={fondo} alt="fondo" />
-        {children}
+        <img src={fondo} alt="fondo" />
     </section>
   )
 }
-// Validación de las props
-Background.propTypes = {
-  children: PropTypes.node, // 'node' es cualquier cosa que React puede renderizar
-};
+// Ya no necesitas la validación de propTypes

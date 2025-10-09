@@ -7,11 +7,11 @@ import { Background } from "../../UI/Background/Background.jsx"
 export const Home = () => {
   return (
     <>
-        <Background>
+        {/* <Background> */}
         <Header />
         <Intro />
         <Footer />
-        </Background>
+        {/* </Background> */}
 
     </>
 

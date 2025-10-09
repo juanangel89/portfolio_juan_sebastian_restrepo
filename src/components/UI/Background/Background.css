@@ -1,22 +1,44 @@
-.fondo > * {
-    position: relative;
-    z-index: 1; /* Asegura que los otros componentes (Header, Intro) se muestren encima del fondo */
-  }
-  
-  .fondo {
-    position: relative;
+/* 1. Contenedor .fondo: ¡CLAVE! */
+.fondo {
+    /* CAMBIO CLAVE: Fija el elemento a la ventana (viewport) */
+    position: fixed; 
+    
+    /* Nueva regla: Asegura que el fondo empiece en la esquina superior */
+    top: 0;
+    left: 0;
+    
+    /* Nueva regla: Ocupa el 100% del alto visible de la pantalla */
+    height: 100vh; 
+    
+    /* Propiedades existentes */
     width: 100%;
-
     overflow: hidden;
-  }
-  
-  .fondo > img {
+    
+    /* Baja el z-index para que esté detrás de todo, incluso el contenido de Routes */
+    z-index: -2; 
+}
+ 
+/* 2. Imagen de Fondo: .fondo > img */
+.fondo > img {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Asegura que la imagen cubra toda el área sin deformarse */
-    z-index: -1; /* Envía la imagen al fondo detrás de los otros elementos */
-  }
-  
+    
+    /* object-fit: cover es correcto para que cubra todo */
+    object-fit: cover; 
+    
+    z-index: -1; 
+}
+ 
+/* 3. Contenido hijo: .fondo > * */
+/* ¡Debes ELIMINAR esta regla o el contenido se quedará fijo e ilegible! */
+/* Si mantienes esta regla, tu contenido de rutas (children) estará dentro del 
+   contenedor fijo (.fondo) y no se podrá scrollear. */
+/*
+.fondo > * {
+    position: relative;
+    z-index: 1; 
+}
+*/

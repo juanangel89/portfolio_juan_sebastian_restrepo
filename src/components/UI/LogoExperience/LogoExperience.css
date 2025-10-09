@@ -1,0 +1,57 @@
+.logoExp {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.logoExp > img {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+}
+
+.text-exp {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: black;
+    padding: 5px;
+}
+
+/* LogoExperience.css */
+
+/* 1. Contenedor de Espacio Fijo (El que reserva el espacio y evita el salto) */
+.text-placeholder {
+    /* **CLAVE**: Define aquí la altura exacta que debe tener el texto. */
+    height: 90px; /* Ajusta este valor al tamaño máximo de tu texto. */
+    
+    /* Importante: oculta el contenido que se desborde del espacio fijo. */
+    overflow: hidden; 
+}
+
+/* 2. Contenedor de Animación (El que se desliza dentro del espacio fijo) */
+.experience-text-container {
+    /* Posiciona el texto completamente fuera de la vista inicialmente */
+    transform: translateY(-100%); 
+    
+    /* Configura la transición para que el movimiento sea suave */
+    transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+    opacity: 0;
+    
+    /* Estilos para que el texto se vea bien */
+    padding: 10px 0; /* Espacio para el texto dentro del contenedor */
+    text-align: center; 
+}
+
+/* 3. Estado "Abierto" */
+.experience-text-container.open {
+    /* Regresa el texto a su posición original (0%) */
+    transform: translateY(0); 
+    opacity: 1;
+}
+
+/* Estilos para asegurar que el texto se ajuste bien si es necesario */
+.experience-text-container .text-exp {
+    font-size: 14px;
+    margin: 0; /* Elimina márgenes extra si los tiene */
+}

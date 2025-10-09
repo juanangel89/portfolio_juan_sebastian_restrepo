@@ -6,7 +6,8 @@ import './MySkills.css'
 
 export const MySkills = () => {
   return (
-    <Background>
+    <>
+    {/* <Background> */}
       <Header/>
         <section className="boxSkills">
           <section className="Skills">
@@ -14,6 +15,7 @@ export const MySkills = () => {
           </section>
         </section>
       <Footer/>
-    </Background>
+    {/* </Background> */}
+    </>
   )
 }

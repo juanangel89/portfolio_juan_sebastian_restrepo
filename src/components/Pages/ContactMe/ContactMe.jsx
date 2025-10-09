@@ -7,7 +7,7 @@ import './ContactMe.css'
 export const ContactMe = () => {
   return (
     <>
-    <Background>
+    {/* <Background> */}
     <Header/>
     <section className="boxContact">
       <section className="contact">
@@ -34,7 +34,7 @@ export const ContactMe = () => {
       </section>
     </section>
     <Footer/>
-    </Background>
+    {/* </Background> */}
     </>
     
   )
