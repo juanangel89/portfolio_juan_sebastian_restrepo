@@ -18,7 +18,7 @@ export const LogoExperience = ({ logolink, name, children }) => {
   };
 
   const experience = {
-    ibg: '6 months of programming applications',
+    ibg: '6 months of programming, fixing bugs, refactoring code, and migrating databases.',
     biotic: 'Brand creation and corporate identity',
     alberto: 'Over 10 years creating electrical calculations, and automating tasks to streamline processes.',
     calculetric: 'Application dedicated to creating electrical calculations for project presentations.',

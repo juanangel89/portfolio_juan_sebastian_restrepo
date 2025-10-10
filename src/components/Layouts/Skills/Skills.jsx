@@ -16,7 +16,7 @@ export const Skills = () => {
                     </div>
                     <div className="conainer-skill">
                         <h2>Java</h2>
-                        <h3> <FaStar /><FaStar /><FaRegStar /></h3>
+                        <h3> <FaStar /><FaRegStar /><FaRegStar /></h3>
                         <h3>Backend</h3>
                     </div>
                 </div>
@@ -61,7 +61,7 @@ export const Skills = () => {
                     </div>
                     <div className="conainer-skill">
                         <h2>Spring Boot</h2>
-                        <h3> <FaStar /><FaStar /><FaRegStar /></h3>
+                        <h3> <FaStar /><FaRegStar /><FaRegStar /></h3>
                         <h3>Backend</h3>
                     </div>
                 </div>
