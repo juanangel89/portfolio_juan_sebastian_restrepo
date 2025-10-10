@@ -29,22 +29,18 @@ export const Intro = () => {
             <h2>Experience</h2>
           </div>
           <section className="list-exp">
-            <div className="exp-card">
+            <LogoExperience logolink={'ibg'} name={'ibg'}>
               <h3>IBG<br /> Ivan Botero Gomez</h3>
-              <LogoExperience logolink={'ibg'} name={'ibg'} />
-            </div>
-            <div className="exp-card">
+            </LogoExperience>
+            <LogoExperience logolink={'calculetric'} name={'calculetric'}>
               <h3>CalculEtric<br /> Application</h3>
-              <LogoExperience logolink={'calculetric'} name={'calculetric'} />
-            </div>
-            <div className="exp-card">
+            </LogoExperience>
+            <LogoExperience logolink={'biotic'} name={'biotic'}>
               <h3>Biotic<br /> environmental services</h3>
-              <LogoExperience logolink={'biotic'} name={'biotic'} />
-            </div>
-            <div className="exp-card">
+            </LogoExperience>
+            <LogoExperience logolink={'alberto'} name={'alberto'}>
               <h3>Alberto<br /> Engineering</h3>
-              <LogoExperience logolink={'alberto'} name={'alberto'} />
-            </div>
+            </LogoExperience>
           </section>
         </section>
         <section className="skills">

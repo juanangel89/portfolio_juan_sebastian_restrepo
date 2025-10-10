@@ -6,7 +6,7 @@ import alberto from '../../../assets/alberto_ingenieria.png';
 import calculetric from '../../../assets/calculetric.png';
 import './LogoExperience.css'
 
-export const LogoExperience = ({ logolink, name }) => {
+export const LogoExperience = ({ logolink, name, children }) => {
 
   const [isVisible, setIsVisible] = useState(false);
 
@@ -33,15 +33,16 @@ export const LogoExperience = ({ logolink, name }) => {
 
 
   return (
-    <>
-      <section className="logoExp" onClick={toggleVisibility}>
+    <div className="exp-card" onClick={toggleVisibility}>
+      {children}
+      <section className="logoExp" >
         <img src={imageSrc} alt={name} />
       </section>
-      <div className="text-placeholder"> 
-          <div className={`experience-text-container ${isVisible ? 'open' : ''}`}>
-              <p className='text-exp'>{textExp}</p>
-          </div>
+      <div className="text-placeholder">
+        <div className={`experience-text-container ${isVisible ? 'open' : ''}`}>
+          <p className='text-exp'>{textExp}</p>
+        </div>
       </div>
-    </>
+    </div>
   )
 }
