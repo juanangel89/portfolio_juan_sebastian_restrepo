@@ -4,7 +4,7 @@ import './Brand.css'
 export const Brand = () => {
   return (
     <section className="brand">
-    <img  src={brand} alt="marca" />
-</section>
+      <img src={brand} alt="marca" />
+    </section>
   )
 }

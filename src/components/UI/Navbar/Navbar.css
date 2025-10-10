@@ -1,21 +1,21 @@
 .navbar-item {
-    margin: 0 15px;
+  margin: 0 15px;
+}
+
+.navbar-item>a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-item a:hover {
+  text-decoration: none;
+}
+
+/* Estilos responsive */
+@media (max-width: 600px) {
+  .navbar-item {
+    margin: 10px 0;
   }
-  
-  .navbar-item > a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .navbar-item a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Estilos responsive */
-  @media (max-width: 600px) {
-    .navbar-item {
-      margin: 10px 0;
-    }
-  }
+}
