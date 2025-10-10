@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import ibg from '../../../assets/ibg.png';
 import biotic from '../../../assets/biotic.png';
 import alberto from '../../../assets/alberto_ingenieria.png';
+import calculetric from '../../../assets/calculetric.png';
 import './LogoExperience.css'
 
 export const LogoExperience = ({ logolink, name }) => {
@@ -13,12 +14,14 @@ export const LogoExperience = ({ logolink, name }) => {
     ibg: ibg,
     biotic: biotic,
     alberto: alberto,
+    calculetric: calculetric,
   };
 
   const experience = {
     ibg: '6 months of programming applications',
     biotic: 'Brand creation and corporate identity',
     alberto: 'Over 10 years creating electrical calculations, and automating tasks to streamline processes.',
+    calculetric: 'Application dedicated to creating electrical calculations for project presentations.',
   }
 
   const imageSrc = images[logolink] || 0;

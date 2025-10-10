@@ -15,12 +15,10 @@ export const Intro = () => {
         </section>
         <section className="about">
           <p>
-            Hi, in this page you found about me and another things I do,
-            enjoy and if you want to ask me something, go a head. <br />
-            Also you will see about advertising, programming and design.
-            I’m from Colombia, I studied advertising and programming, I
-            like the art, architecture, culture, technology, science and other
-            topics. I want to study a lot I don’t want to stop.
+            I have experience in advertising, programming and process automation. <br />
+            I'm from Colombia and studied advertising and programming. 
+            I enjoy art, architecture, culture, technology, science, and other subjects. 
+            I want to study hard and I don't want to stop.
           </p>
         </section>
         <br />
@@ -31,16 +29,20 @@ export const Intro = () => {
           </div>
           <section className="list-exp">
             <div className="exp-card">
-              <h3>IBG<br/> Ivan Botero Gomez</h3>
-              <LogoExperience logolink={'ibg'} name={'ibg'}/>
+              <h3>IBG<br /> Ivan Botero Gomez</h3>
+              <LogoExperience logolink={'ibg'} name={'ibg'} />
             </div>
             <div className="exp-card">
-              <h3>Biotic<br/> environmental services</h3>
-              <LogoExperience logolink={'biotic'} name={'biotic'}/>
+              <h3>CalculEtric<br /> Application</h3>
+              <LogoExperience logolink={'calculetric'} name={'calculetric'} />
             </div>
             <div className="exp-card">
-              <h3>Alberto<br/> Engineering</h3>
-              <LogoExperience logolink={'alberto'} name={'alberto'}/>
+              <h3>Biotic<br /> environmental services</h3>
+              <LogoExperience logolink={'biotic'} name={'biotic'} />
+            </div>
+            <div className="exp-card">
+              <h3>Alberto<br /> Engineering</h3>
+              <LogoExperience logolink={'alberto'} name={'alberto'} />
             </div>
 
           </section>

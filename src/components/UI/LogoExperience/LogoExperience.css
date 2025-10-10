@@ -55,3 +55,30 @@
     font-size: 14px;
     margin: 0; /* Elimina márgenes extra si los tiene */
 }
+
+@media screen and (min-width: 390px) and (max-width: 490px) {
+    .logoExp > img {
+    cursor: unset;
+}
+    /* Sobrescribir el Contenedor de Animación */
+    .experience-text-container {
+        /* 1. Elimina la transformación de ocultamiento */
+        transform: translateY(0) !important; 
+        
+        /* 2. Fuerza la visibilidad */
+        opacity: 1 !important; 
+
+        /* 3. Desactiva la transición (opcional, pero recomendado para evitar destellos) */
+        transition: none !important; 
+        
+        /* 4. Asegura que el texto no se oculte por overflow (si lo hiciera el padre) */
+        overflow: visible !important;
+    }
+
+    /* Sobrescribir la clase 'open' para asegurar que no interfiera */
+    .experience-text-container.open {
+        transform: translateY(0); 
+        opacity: 1;
+    }
+
+}
