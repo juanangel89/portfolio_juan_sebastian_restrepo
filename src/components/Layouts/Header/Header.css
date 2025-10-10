@@ -15,17 +15,19 @@ header {
 
 /* Ocultar el botón de menú por defecto en escritorio */
 .menu-toggle {
-    display: none; 
-    border: none;
-    background: transparent;
-    cursor: pointer;
-    font-size: 1.5rem;
-    color: #fff; /* Asegúrate de que el color del ícono se vea bien */
+  display: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #fff;
+  /* Asegúrate de que el color del ícono se vea bien */
 }
 
 /* En escritorio, la navbar está visible y en línea */
 .navbar {
-    display: block; /* Vuelve a block para que no interfiera */
+  display: block;
+  /* Vuelve a block para que no interfiera */
 }
 
 .navbar-list {
@@ -41,47 +43,54 @@ header {
 
 /* Estilos para pantallas pequeñas (Móvil/Tablet) */
 @media (max-width: 819px) {
-    
-    header {
-        /* Vuelve a la separación para que el Brand y el Toggle estén en lados opuestos */
-        justify-content: space-between;
-        gap: unset; 
-        padding: 0 5%; /* Menos padding en pantallas pequeñas */
-    }
 
-    /* 1. MOSTRAR EL BOTÓN HAMBURGUESA */
-    .menu-toggle {
-        display: block; 
-        order: 2; /* Asegura que el botón esté a la derecha, si lo deseas */
-    }
+  header {
+    /* Vuelve a la separación para que el Brand y el Toggle estén en lados opuestos */
+    justify-content: space-between;
+    gap: unset;
+    padding: 0 5%;
+    /* Menos padding en pantallas pequeñas */
+  }
 
-    .toggle-icon{
-      width: 30px;
-      height: auto;
-    }
+  /* 1. MOSTRAR EL BOTÓN HAMBURGUESA */
+  .menu-toggle {
+    display: block;
+    order: 2;
+    /* Asegura que el botón esté a la derecha, si lo deseas */
+  }
 
-    /* 2. OCULTAR Y POSICIONAR LA LISTA POR DEFECTO */
-    .navbar {
-        /* Ocupa el 100% del ancho bajo el header */
+  .toggle-icon {
+    width: 30px;
+    height: auto;
+  }
 
-        /* Esencial: oculta por defecto */
-        max-height: 0; 
-        overflow: hidden;
-        /* Estilos de transición para el deslizamiento suave */
-        transition: max-height 0.3s ease-in-out; 
-    }
-    
-    /* 3. ESTADO ABIERTO: MOSTRAR LA LISTA */
-    .navbar.open {
-        /* Desliza la lista hacia abajo */
-        max-height: 400px; /* Suficiente altura para que se vea toda la lista */
-    }
+  /* 2. OCULTAR Y POSICIONAR LA LISTA POR DEFECTO */
+  .navbar {
+    /* Ocupa el 100% del ancho bajo el header */
 
-    /* 4. HACER LA LISTA VERTICAL */
-    .navbar-list {
-      gap: 0.1rem;
-        flex-direction: column; /* Apila los enlaces verticalmente */
-        align-items: center; /* Centra los enlaces en la pantalla */
-        padding: 0.1rem 1rem;
-    }
+    /* Esencial: oculta por defecto */
+    max-height: 0;
+    overflow: hidden;
+    /* Estilos de transición para el deslizamiento suave */
+    transition: max-height 0.3s ease-in-out;
+  }
+
+  /* 3. ESTADO ABIERTO: MOSTRAR LA LISTA */
+  
+  .navbar.open {
+    padding: 2cqh;
+    /* Desliza la lista hacia abajo */
+    max-height: 400px;
+    /* Suficiente altura para que se vea toda la lista */
+  }
+
+  /* 4. HACER LA LISTA VERTICAL */
+  .navbar-list {
+    gap: 0.1rem;
+    flex-direction: column;
+    /* Apila los enlaces verticalmente */
+    align-items: center;
+    /* Centra los enlaces en la pantalla */
+    padding: 0.1rem 1rem;
+  }
 }
