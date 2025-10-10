@@ -1,13 +1,21 @@
-header{
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background: linear-gradient(180deg, rgba(24, 67, 102, 0.95) 0%, rgba(13, 41, 63, 0.85) 100%);
   border-bottom: 2px solid rgba(7, 23, 35, 0.85);
+  padding: 1rem 20%;
+  flex-wrap: wrap;
+  width: 100%;
 }
+
 .navbar {
-  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .navbar-list {
@@ -15,20 +23,15 @@ header{
   list-style-type: none;
   padding: 0;
   margin: 0;
+  gap: 1rem;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
 
 /* Estilos responsive */
-@media (max-width: 600px) {
-  header{
-    background-color: #333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .navbar-list {
-    flex-direction: column;
-    align-items: center;
+@media (max-width: 850px) {
+  header {
+    justify-content: center;
   }
 }
