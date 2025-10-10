@@ -1,6 +1,7 @@
 //rafc
 import { LogoExperience } from "../../UI/LogoExperience/LogoExperience"
 import { Photo } from "../../UI/Photo/Photo"
+import { Skills } from '../Skills/Skills.jsx'
 import './Intro.css'
 
 
@@ -16,8 +17,8 @@ export const Intro = () => {
         <section className="about">
           <p>
             I have experience in advertising, programming and process automation. <br />
-            I'm from Colombia and studied advertising and programming. 
-            I enjoy art, architecture, culture, technology, science, and other subjects. 
+            I'm from Colombia and studied advertising and programming.
+            I enjoy art, architecture, culture, technology, science, and other subjects.
             I want to study hard and I don't want to stop.
           </p>
         </section>
@@ -44,8 +45,13 @@ export const Intro = () => {
               <h3>Alberto<br /> Engineering</h3>
               <LogoExperience logolink={'alberto'} name={'alberto'} />
             </div>
-
           </section>
+        </section>
+        <section className="skills">
+          <div className="tittle-skill">
+            <h2>Skills</h2>
+          </div>
+          <Skills />
         </section>
       </section>
     </>
