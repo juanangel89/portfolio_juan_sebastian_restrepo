@@ -1,26 +1,12 @@
 .brand {
-    width: 15%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
-  }
-  .brand > img {
-    max-width: 100%; /* La imagen nunca excederá el ancho del contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
-    object-fit: contain; /* Evita que la imagen se estire y asegura que mantenga su proporción */
-  }
+  width: 8rem;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
 
-    /* Estilos responsive */
-    @media (max-width: 600px) {
-        .brand {
-            width: 100%;
-            height: auto;
-            display: flex;
-            justify-content: center;
-            padding: 1rem;
-          }
-        .brand > img {
-            width: 70%;
-          }
-      }
+.brand>img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
