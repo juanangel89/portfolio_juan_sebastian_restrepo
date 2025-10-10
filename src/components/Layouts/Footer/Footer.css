@@ -1,37 +1,238 @@
-.footer > p{
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px;
-    padding: 2rem;
+/* --- 1. Estilos del Footer Principal con Gradiente y Sombra --- */
+footer p{
+  padding: .6rem;
 }
-footer {
-  padding: 2rem;
+.footer-bar {
+  background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%); 
+  color: #ffffff; 
+  padding: 30px 50px;
+  
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  gap: 40px;
+  width: 100%;
+  
+  /* Sombra sutil para dar profundidad */
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+  
+  /* Animación de entrada */
+  animation: fadeInUp 0.8s ease-out;
+  
+  /* Mejor separación visual */
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Animación de entrada del footer */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --- 2. Estilos de Contacto Mejorados --- */
+
+.footer-contact {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+}
+
+.footer-contact p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.contact-label {
+  font-weight: 600;
+  margin-right: 8px;
+  opacity: 0.9;
+}
+
+.footer-contact a {
+  color: #c9e3ff;
+  text-decoration: none; 
+  transition: all 0.3s ease;
+  position: relative;
+  padding-bottom: 2px;
+}
+
+/* Efecto de subrayado animado */
+.footer-contact a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  transition: width 0.3s ease;
+}
+
+.footer-contact a:hover {
+  color: #ffffff;
+  transform: translateX(3px);
+}
+
+.footer-contact a:hover::after {
+  width: 100%;
+}
+
+/* --- 3. Estilos de Redes Sociales con Animación Mejorada --- */
+
+.footer-social-icons ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 25px;
+}
+
+.social-icon-item {
+  position: relative;
+}
+
+.social-icon-item a {
+  display: flex;
   align-items: center;
-  justify-content: space-around;
-  background-color: black;
-}
-.social > ul {
-  display: flex;
-  gap: 1rem;
   justify-content: center;
-  align-items: center;
-  padding-bottom: 1rem;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  position: relative;
+  overflow: hidden;
 }
 
-
-@media screen and (min-width: 390px) and (max-width: 490px) {
-    footer {
-        padding: 2rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        background-color: black;
-      }
-
+/* Efecto de ondas en el fondo */
+.social-icon-item a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, var(--social-color, #ffffff) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 0;
 }
 
+.social-icon-item a:hover::before {
+  opacity: 0.3;
+}
 
+.social-icon {
+  color: #ffffff; 
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  position: relative;
+  z-index: 1;
+}
 
+.social-icon-item a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.social-icon-item a:hover .social-icon {
+  color: var(--social-color, #ffffff); 
+  transform: rotate(360deg) scale(1.1);
+}
+
+/* --- 4. Estilos de Copyright Mejorados --- */
+
+.footer-copyright {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.footer-copyright p {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.rights-text {
+  font-size: 0.8rem !important;
+  opacity: 0.8;
+  font-weight: 400 !important;
+}
+
+/* --- 5. Media Query para Tablets --- */
+
+@media (max-width: 1024px) {
+  .footer-bar {
+    padding: 25px 30px;
+    gap: 30px;
+  }
+  
+  .footer-contact p,
+  .footer-copyright p {
+    font-size: 0.85rem;
+  }
+}
+
+/* --- 6. Media Query para Móviles --- */
+
+@media (max-width: 768px) {
+  .footer-bar {
+    flex-direction: column; 
+    text-align: center;
+    gap: 25px; 
+    padding: 30px 20px;
+  }
+  
+  .footer-social-icons {
+    order: -1; 
+  }
+  
+  .footer-copyright {
+    text-align: center;
+  }
+  
+  .footer-contact {
+    align-items: center;
+  }
+  
+  .footer-social-icons ul {
+    gap: 20px;
+  }
+  
+  .social-icon-item a {
+    width: 50px;
+    height: 50px;
+  }
+  
+  /* Animación más suave en móviles */
+  .social-icon-item a:hover {
+    transform: translateY(-3px) scale(1.05);
+  }
+}
+
+/* --- 7. Media Query para Móviles Pequeños --- */
+
+@media (max-width: 480px) {
+  .footer-bar {
+    padding: 25px 15px;
+  }
+  
+  .footer-contact p {
+    font-size: 0.8rem;
+  }
+  
+  .footer-social-icons ul {
+    gap: 15px;
+  }
+  
+  .social-icon-item a {
+    width: 42px;
+    height: 42px;
+  }
+}
