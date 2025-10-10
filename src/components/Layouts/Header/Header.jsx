@@ -1,5 +1,5 @@
 // Header.jsx
-import { useState,useEffect } from 'react'; // Importa useState
+import { useState } from 'react'; // Importa useState
 import { Navbar } from '../../UI/Navbar/Navbar'
 import { Brand } from '../../UI/Brand/Brand'
 // Importa un ícono de hamburguesa. Si usas 'react-icons', puedes usar FaBars
@@ -16,29 +16,7 @@ export const Header = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
-        // 1. Hook useEffect para manejar el scroll
-    useEffect(() => {
-        
-        // Función para cerrar el menú
-        const closeMenuOnScroll = () => {
-            // Solo intentamos cerrar si el menú está abierto
-            if (isMenuOpen) {
-                setIsMenuOpen(false);
-            }
-        };
-
-        // 2. Añadir el escuchador de eventos 'scroll'
-        // Esto se ejecutará cada vez que la página se desplace
-        window.addEventListener('scroll', closeMenuOnScroll);
-
-        // 3. Función de limpieza
-        // Es crucial remover el escuchador cuando el componente se desmonta
-        // o cuando isMenuOpen cambie (aunque en este caso es mejor desmontar).
-        return () => {
-            window.removeEventListener('scroll', closeMenuOnScroll);
-        };
-        
-    }, [isMenuOpen]); 
+    
 
     return (
         <header>
