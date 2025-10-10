@@ -31,7 +31,7 @@ export const Header = () => {
                 <ul className="navbar-list">
                     <Navbar link='/' text='Home'/>
                     <Navbar link='/MyProjects' text='Projects'/>
-                    <Navbar link='/MySkills' text='Skills'/>
+                    {/* <Navbar link='/MySkills' text='Skills'/> */}
                     <Navbar link='/ContactMe' text='Contact'/>
                 </ul>
             </nav>

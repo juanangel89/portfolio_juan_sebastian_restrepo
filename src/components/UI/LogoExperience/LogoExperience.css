@@ -16,6 +16,7 @@
     font-size: 15px;
     color: black;
     padding: 0 1rem;
+
 }
 
 /* LogoExperience.css */
@@ -23,7 +24,7 @@
 /* 1. Contenedor de Espacio Fijo (El que reserva el espacio y evita el salto) */
 .text-placeholder {
     /* **CLAVE**: Define aquí la altura exacta que debe tener el texto. */
-    height: 60px; /* Ajusta este valor al tamaño máximo de tu texto. */
+    height: 50px; /* Ajusta este valor al tamaño máximo de tu texto. */
     
     /* Importante: oculta el contenido que se desborde del espacio fijo. */
     overflow: hidden; 
@@ -32,7 +33,7 @@
 /* 2. Contenedor de Animación (El que se desliza dentro del espacio fijo) */
 .experience-text-container {
     /* Posiciona el texto completamente fuera de la vista inicialmente */
-    transform: translateY(-100%); 
+    /* transform: translateY(-100%);  */
     
     /* Configura la transición para que el movimiento sea suave */
     transition: transform 0.4s ease-out, opacity 0.4s ease-out;
@@ -46,7 +47,7 @@
 /* 3. Estado "Abierto" */
 .experience-text-container.open {
     /* Regresa el texto a su posición original (0%) */
-    transform: translateY(0); 
+    /* transform: translateY(0);  */
     opacity: 1;
 }
 
@@ -54,6 +55,7 @@
 .experience-text-container .text-exp {
     font-size: 14px;
     margin: 0; /* Elimina márgenes extra si los tiene */
+
 }
 
 @media screen and (min-width: 390px) and (max-width: 490px) {
@@ -63,7 +65,7 @@
     /* Sobrescribir el Contenedor de Animación */
     .experience-text-container {
         /* 1. Elimina la transformación de ocultamiento */
-        transform: translateY(0) !important; 
+        /* transform: translateY(0) !important;  */
         
         /* 2. Fuerza la visibilidad */
         opacity: 1 !important; 
