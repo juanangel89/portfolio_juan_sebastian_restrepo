@@ -4,34 +4,84 @@ header {
   left: 0;
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(180deg, rgba(24, 67, 102, 0.95) 0%, rgba(13, 41, 63, 0.85) 100%);
+  background: linear-gradient(180deg, rgba(24, 67, 102) 0%, rgba(13, 41, 63) 100%);
   border-bottom: 2px solid rgba(7, 23, 35, 0.85);
-  padding: 1rem 20%;
-  flex-wrap: wrap;
+  padding: 0 10%;
   width: 100%;
 }
 
+/* Ocultar el botón de menú por defecto en escritorio */
+.menu-toggle {
+    display: none; 
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #fff; /* Asegúrate de que el color del ícono se vea bien */
+}
+
+/* En escritorio, la navbar está visible y en línea */
 .navbar {
-  display: flex;
-  flex-direction: column;
+    display: block; /* Vuelve a block para que no interfiera */
 }
 
 .navbar-list {
   display: flex;
   list-style-type: none;
-  padding: 0;
+  padding: 1rem;
   margin: 0;
   gap: 1rem;
-  flex-wrap: wrap;
   justify-content: space-around;
+  text-align: center;
 }
 
 
-/* Estilos responsive */
-@media (max-width: 850px) {
-  header {
-    justify-content: center;
-  }
+/* Estilos para pantallas pequeñas (Móvil/Tablet) */
+@media (max-width: 819px) {
+    
+    header {
+        /* Vuelve a la separación para que el Brand y el Toggle estén en lados opuestos */
+        justify-content: space-between;
+        gap: unset; 
+        padding: 0 5%; /* Menos padding en pantallas pequeñas */
+    }
+
+    /* 1. MOSTRAR EL BOTÓN HAMBURGUESA */
+    .menu-toggle {
+        display: block; 
+        order: 2; /* Asegura que el botón esté a la derecha, si lo deseas */
+    }
+
+    .toggle-icon{
+      width: 50px;
+      height: auto;
+    }
+
+    /* 2. OCULTAR Y POSICIONAR LA LISTA POR DEFECTO */
+    .navbar {
+        /* Ocupa el 100% del ancho bajo el header */
+
+        /* Esencial: oculta por defecto */
+        max-height: 0; 
+        overflow: hidden;
+        /* Estilos de transición para el deslizamiento suave */
+        transition: max-height 0.3s ease-in-out; 
+    }
+    
+    /* 3. ESTADO ABIERTO: MOSTRAR LA LISTA */
+    .navbar.open {
+        /* Desliza la lista hacia abajo */
+        max-height: 400px; /* Suficiente altura para que se vea toda la lista */
+    }
+
+    /* 4. HACER LA LISTA VERTICAL */
+    .navbar-list {
+      gap: 0.1rem;
+        flex-direction: column; /* Apila los enlaces verticalmente */
+        align-items: center; /* Centra los enlaces en la pantalla */
+        padding: 0.1rem 1rem;
+    }
 }
