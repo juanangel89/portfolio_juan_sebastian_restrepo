@@ -5,6 +5,7 @@ import juanshop from '../../../assets/juanshop.png';
 import vino from '../../../assets/vino.jpg';
 import atlas from '../../../assets/atlas.png';
 import calculetric from '../../../assets/calculetricpage.png';
+import shop from '../../../assets/tienda.png';
 import './Project.css'
 
 
@@ -16,6 +17,7 @@ export const Project = ({classPro,name,tittle,link}) => {
     vino: vino,
     atlas: atlas,
     calculetric: calculetric,
+    tienda: shop,
   };
   // Selecciona la imagen en función del name, o usa una imagen por defecto si el name no coincide
   const imageSrc = images[name] || edtravel;
