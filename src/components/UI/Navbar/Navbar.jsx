@@ -4,10 +4,10 @@ import './Navbar.css'
 
 export const Navbar = ({link,text}) => {
   return (
-    <li className="navbar-item">
-      <Link to={link}>{text}</Link>
-    {/* <a href={link}>{text}</a> */}
-  </li>
+    
+      <Link className="navbar-item" to={link}>{text}</Link>
+   
+  
   )
 }
 // Validación de las props

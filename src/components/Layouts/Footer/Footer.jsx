@@ -41,7 +41,7 @@ export const Footer = () => {
           </a>
         </p>
         <p>
-          <span className="contact-label">Teléfono:</span> 
+          <span className="contact-label">Phone:</span> 
           <a href="tel:+573186283663" aria-label="Llamar al 3186283663">
             +57 318 628 3663
           </a>

@@ -229,7 +229,18 @@
       /* Sombra principal para profundidad */
       -5px -5px 15px rgba(255, 255, 255, 0.2);
     border-radius: 1rem;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Nueva línea: Suaviza el efecto */
   }
+
+  /* Este es el nuevo bloque que necesitas */
+.exp-card:hover {
+    /* Expande el elemento un 5% (1.05) */
+    transform: scale(1.05); 
+    
+    /* Opcional: Cambia la sombra para un efecto más "levantado" */
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.7), 
+                -8px -8px 20px rgba(255, 255, 255, 0.3);
+}
 
   .intro>.skills {
     width: 100%;

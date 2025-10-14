@@ -1,10 +1,11 @@
 import brand from '../../../assets/brand.png';
+import { Link } from 'react-router-dom';
 import './Brand.css'
 
-export const Brand = () => {
+export const Brand = ({link}) => {
   return (
-    <section className="brand">
+    <Link to={link} className="brand">
       <img src={brand} alt="marca" />
-    </section>
+    </Link>
   )
 }

@@ -4,9 +4,9 @@ import { motion } from 'framer-motion';
 
 // Define las animaciones de entrada y salida
 const pageTransition = {
-  initial: { opacity: 0, y: 100 }, // Empieza invisible y a la izquierda
+  initial: { opacity: 0, y: -100}, // Empieza invisible
   animate: { opacity: 1, y: 0 },    // Termina visible en su posición
-  exit: { opacity: 0, y: -100 },     // Se va invisible y a la derecha
+  exit: { opacity: 0, y: 100},     // Se va invisible
 };
 
 export const AnimatedPage = ({ children }) => {

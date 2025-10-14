@@ -20,7 +20,7 @@ export const Header = () => {
 
     return (
         <header>
-            <Brand/>
+            <Brand link='/'/>
 
             {/* BOTÓN HAMBURGUESA: Solo visible en pantallas pequeñas */}
             <button className="menu-toggle" onClick={toggleMenu}>
