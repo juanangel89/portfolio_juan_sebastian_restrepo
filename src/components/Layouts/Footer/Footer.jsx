@@ -1,5 +1,5 @@
 import "./Footer.css";
-import { FaLinkedin, FaWhatsapp, FaInstagram, FaFacebook } from 'react-icons/fa';
+import { FaLinkedin, FaWhatsapp, FaInstagram, FaFacebook,FaGithub } from 'react-icons/fa';
 
 const SOCIAL_LINKS = [
   { 
@@ -25,6 +25,12 @@ const SOCIAL_LINKS = [
     IconComponent: FaFacebook, 
     color: "#1877F2",
     label: "Facebook"
+  },
+    { 
+    link: "https://github.com/juanangel89", 
+    IconComponent: FaGithub, 
+    color: "#1b1b1bff",
+    label: "GitHub"
   }
 ];
 
