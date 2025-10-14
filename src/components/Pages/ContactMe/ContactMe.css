@@ -43,6 +43,7 @@ input{
     border: none;
 }
 textarea{
+    font-family: Arial, Helvetica, sans-serif;
     padding: 0.5rem;
     height: 10rem;
     border-radius: 1rem;
@@ -55,7 +56,7 @@ textarea{
 .send{
     font-size: 1rem;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #081F32;
+    background-color: #19456A;
     color: rgb(255, 255, 255);
     padding: 0 3rem;
     cursor: pointer;
