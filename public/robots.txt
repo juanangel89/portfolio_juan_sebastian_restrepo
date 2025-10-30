@@ -1,0 +1,11 @@
+# Permitir a todos los bots (User-agent: *) acceder a todo el sitio (Disallow: nada).
+User-agent: *
+Disallow:
+
+# Reglas específicas para Google
+# Es un alias para Googlebot (el rastreador principal de Google)
+User-agent: Googlebot
+Disallow:
+
+# Indicar la ubicación de tu Sitemap. Esto ayuda a los motores de búsqueda a encontrar e indexar todas tus páginas.
+Sitemap: https://juan-sebastian-restrepo-angel.vercel.app/sitemap.xml
