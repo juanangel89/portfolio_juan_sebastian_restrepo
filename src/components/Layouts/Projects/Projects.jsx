@@ -11,6 +11,7 @@ export const Projects = () => {
       <Project classPro='program' name='juanshop' tittle='API - Page Juan Shop' link='https://shop-api-iota.vercel.app/index.html'/>
       <Project classPro='program' name='atlas' tittle='Page - Atlas' link='https://proyecto-atlas-ashy.vercel.app/'/>
       <Project classPro='program' name='edtravel' tittle='Page - Ed-Travel' link='https://ediwn-entregable-kfnmqn1p2-juanangels-projects.vercel.app/'/>
+      <Project classPro='program' name='petcare' tittle='Game - pet care' link='https://tamagochi-gold.vercel.app/'/>
       <Project classPro='render' name='vino' tittle='Render - wine shop' link=''/>
   </section>
   )
