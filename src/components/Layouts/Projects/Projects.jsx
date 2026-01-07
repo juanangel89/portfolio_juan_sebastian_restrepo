@@ -1,4 +1,6 @@
 import { Project } from "../../UI/Project/Project"
+import  biotic  from "../../../assets/manualbiotic.pdf"
+import  educado  from "../../../assets/manualeducado.pdf"
 
 import './Projects.css'
 
@@ -6,6 +8,8 @@ export const Projects = () => {
   return (
     <section className="projects">
       <Project classPro='program' name='calculetric' tittle='App - CalculEtric' link='https://calculetric.vercel.app/'/>
+      <Project classPro='program' name='biotic' tittle='Brand - Biotic' link={biotic}/>
+      <Project classPro='program' name='educado' tittle='Brand - Educado' link={educado}/>
       <Project classPro='program' name='horas_extras' tittle='App - Horas extras' link='https://github.com/juanangel89/horas_extras/tree/main'/>
       <Project classPro='program' name='tienda' tittle='App - Market List' link='https://marke-list.vercel.app/'/>
       <Project classPro='program' name='petcare' tittle='Game - Pet care' link='https://tamagochi-gold.vercel.app/'/>

@@ -9,6 +9,8 @@ import shop from '../../../assets/tienda.png';
 import horas_extras from '../../../assets/horas_extras.png';
 import petcare from '../../../assets/petcare.png';
 import chat from '../../../assets/chat.png';
+import biotic from '../../../assets/brandbiotic.png';
+import educado from '../../../assets/brandeducado.png';
 import './Project.css'
 
 
@@ -23,7 +25,9 @@ export const Project = ({classPro,name,tittle,link}) => {
     tienda: shop,
     horas_extras: horas_extras,
     petcare: petcare,
-    chat: chat
+    chat: chat,
+    biotic: biotic,
+    educado: educado,
   };
   // Selecciona la imagen en función del name, o usa una imagen por defecto si el name no coincide
   const imageSrc = images[name] || edtravel;
@@ -35,25 +39,6 @@ export const Project = ({classPro,name,tittle,link}) => {
       <a href={link}
         ><img  src={imageSrc} alt={name} /></a>
   </section>
-    {/* <section className="render">
-    <p>Reder wine shop</p>
-    <img  src={vino} alt="vino" />
-  </section>
-  <section className="program">
-    <p>Page Juan Shop API</p>
-      <a href="https://shop-api-iota.vercel.app/index.html"
-        ><img  src={juanshop} alt="juanshop" /></a>
-  </section>
-  <section className="program">
-    <p>Page Atlas</p>
-      <a href="https://proyecto-atlas-ashy.vercel.app/"
-        ><img  src={atlas} alt="atlas" /></a>
-  </section>
-  <section className="program">
-    <p>Page Ed-Travel</p>
-    <a href="https://ediwn-entregable-kfnmqn1p2-juanangels-projects.vercel.app/"
-    ><img  src={edtravel} alt="edtravel" /></a>
-  </section> */}
     </>
     
   )

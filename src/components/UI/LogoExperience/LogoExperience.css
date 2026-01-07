@@ -24,10 +24,11 @@
 /* 1. Contenedor de Espacio Fijo (El que reserva el espacio y evita el salto) */
 .text-placeholder {
     /* **CLAVE**: Define aquí la altura exacta que debe tener el texto. */
-    height: 50px; /* Ajusta este valor al tamaño máximo de tu texto. */
+    height: 60px; /* Ajusta este valor al tamaño máximo de tu texto. */
     
     /* Importante: oculta el contenido que se desborde del espacio fijo. */
-    overflow: hidden; 
+    overflow: hidden;
+    margin-bottom: 1rem; 
 }
 
 /* 2. Contenedor de Animación (El que se desliza dentro del espacio fijo) */
@@ -37,8 +38,7 @@
     
     /* Configura la transición para que el movimiento sea suave */
     transition: transform 0.4s ease-out, opacity 0.4s ease-out;
-    opacity: 0;
-    
+    opacity: 1; /* Inicialmente visible */    
     /* Estilos para que el texto se vea bien */
     padding: 10px 0; /* Espacio para el texto dentro del contenedor */
     text-align: center; 
@@ -74,7 +74,7 @@
         transition: none !important; 
         
         /* 4. Asegura que el texto no se oculte por overflow (si lo hiciera el padre) */
-        overflow: visible !important;
+        overflow: visible;
     }
 
     /* Sobrescribir la clase 'open' para asegurar que no interfiera */

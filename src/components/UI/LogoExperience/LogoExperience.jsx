@@ -18,7 +18,7 @@ export const LogoExperience = ({ logolink, name, children }) => {
   };
 
   const experience = {
-    ibg: '6 months of programming, fixing bugs, refactoring code, and migrating databases.',
+    ibg: '9 months of programming, fixing bugs, refactoring code, and migrating databases.',
     biotic: 'Brand creation and corporate identity',
     alberto: 'Over 10 years creating electrical calculations, and automating tasks to streamline processes.',
     calculetric: 'Application dedicated to creating electrical calculations for project presentations.',
@@ -42,6 +42,7 @@ export const LogoExperience = ({ logolink, name, children }) => {
         <div className={`experience-text-container ${isVisible ? 'open' : ''}`}>
           <p className='text-exp'>{textExp}</p>
         </div>
+        
       </div>
     </div>
   )
