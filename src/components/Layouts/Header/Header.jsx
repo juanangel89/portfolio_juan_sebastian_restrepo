@@ -32,7 +32,8 @@ export const Header = () => {
             <nav className={`navbar ${isMenuOpen ? 'open' : ''}`}> 
                 <ul className="navbar-list">
                     <Navbar link='/' text='Home'/>
-                    <Navbar link='/MyProjects' text='Projects'/>
+                    <Navbar link='/MyDevelopments' text='Development'/>
+                    <Navbar link='/MyDesigns' text='Design'/>
                     {/* <Navbar link='/MySkills' text='Skills'/> */}
                     <Navbar link='/ContactMe' text='Contact'/>
                 </ul>
