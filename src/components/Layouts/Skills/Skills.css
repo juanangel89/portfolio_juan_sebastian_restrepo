@@ -1,6 +1,6 @@
 .list-skill {
     width: 100%;
-    color: rgb(0, 0, 0);
+    /* color: rgb(0, 0, 0); */
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     padding: 3rem 2rem;
@@ -10,8 +10,11 @@
     justify-content: center;
     text-align: center;
     /* Usar RGBA: (R, G, B, Opacidad) */
-    background-color: rgb(214, 255, 224, 0.2);
+    /* background-color: rgb(214, 255, 224, 0.2); */
+}
 
+.conainer-skill>h3 {
+ font-size: 12px;
 }
 
 .list-skill>.group-tittle {
@@ -31,7 +34,7 @@
 .group-tittle>.legend {
     background-color: rgb(214, 255, 224);
     padding: 1rem;
-    font-size: 20px;
+    font-size: 15px;
     color: #276190;
     border-radius: 1rem;
     border: 5px solid #276190;
@@ -47,8 +50,8 @@
     /* Sombra clara/brillo */
     padding: 0 1rem;
     border-radius: 1rem;
-    width: 17rem;
-    height: 8rem;
+    width: 15rem;
+    height: 6rem;
     display: flex;
     flex-direction: row;
     justify-content: left;
@@ -62,6 +65,7 @@
 .skill-card:hover {
     /* Expande el elemento un 5% (1.05) */
     transform: scale(1.05); 
+
     
     /* Opcional: Cambia la sombra para un efecto más "levantado" */
     box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.7), 
@@ -81,9 +85,9 @@
 }
 
 .icon-skill {
-    font-size: 40px;
+    /* font-size: 20px; */
     padding: 0;
-    width: 4rem;
+    width: 3rem;
     height: auto;
     color: white;
 }
@@ -97,7 +101,7 @@
 }
 
 .conainer-skill>h2 {
-    font-size: 22px;
+    font-size: 18px;
 }
 
 @media screen and (min-width: 390px) and (max-width: 490px) {

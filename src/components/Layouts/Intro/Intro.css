@@ -21,7 +21,7 @@
     padding: 2rem;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px;
+    font-size: 18px;
   }
 
   .intro>.about {
@@ -81,7 +81,7 @@
     padding: 1rem;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px;
+    font-size: 18px;
 
   }
 
@@ -151,7 +151,7 @@
     padding: 0 7rem 0 0;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 28px;
+    font-size: 20px;
   }
 
   .intro>.about {
@@ -210,6 +210,11 @@
   padding: 2rem;
   text-align: center;
 }
+
+  .tittle-exp>h2 {
+    font-size: 18px;
+  }
+
 .exp-card>h3 {
   font-size: 15px;
 }
@@ -256,4 +261,8 @@
      background: linear-gradient(180deg, rgba(36, 99, 152, 0.95) 0%, rgba(30, 80, 120, 0.85) 100%);
     padding: 2rem;
     text-align: center;
+  }
+
+  .tittle-skill>h2 {
+    font-size: 18px;
   }
