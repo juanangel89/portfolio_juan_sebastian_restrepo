@@ -16,10 +16,7 @@ export const Intro = () => {
         </section>
         <section className="about">
           <p>
-            I have experience in advertising, programming and process automation. <br />
-            I'm from Colombia and studied advertising and programming.
-            I enjoy art, architecture, culture, technology, science, and other subjects.
-            I want to study hard and I don't want to stop.
+I have experience in advertising, programming, and process automation. I am from Colombia, with academic training in both advertising and software development. I am passionate about art, architecture, culture, technology, and science—fields that strongly influence my creative and technical work. I believe in lifelong learning and I am constantly studying, experimenting, and improving my skills.
           </p>
         </section>
         <br />
