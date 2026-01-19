@@ -11,10 +11,11 @@ import petcare from '../../../assets/petcare.png';
 import chat from '../../../assets/chat.png';
 import biotic from '../../../assets/brandbiotic.png';
 import educado from '../../../assets/brandeducado.png';
+import chocobone from '../../../assets/chocobone.png';
 import './Project.css'
 
 
-export const Project = ({classPro,name,tittle,link}) => {
+export const Project = ({classPro,name,tittle,description,link}) => {
      // Mapeo de nombres a imágenes
   const images = {
     edtravel: edtravel,
@@ -28,6 +29,7 @@ export const Project = ({classPro,name,tittle,link}) => {
     chat: chat,
     biotic: biotic,
     educado: educado,
+    chocobone: chocobone,
   };
   // Selecciona la imagen en función del name, o usa una imagen por defecto si el name no coincide
   const imageSrc = images[name] || edtravel;
@@ -35,7 +37,10 @@ export const Project = ({classPro,name,tittle,link}) => {
   return (
     <>
      <section className={classPro}>
-    <p>{tittle}</p>
+      <section className='text-project'>
+    <h3>{tittle}</h3>
+    <p>{description}</p>
+      </section>
       <a href={link}
         ><img  src={imageSrc} alt={name} /></a>
   </section>
@@ -48,5 +53,6 @@ Project.propTypes = {
     classPro: PropTypes.node, // 'node' es cualquier cosa que React puede renderizar
     name: PropTypes.node,
     tittle: PropTypes.node,
+    description: PropTypes.node,
     link: PropTypes.node,
   };
